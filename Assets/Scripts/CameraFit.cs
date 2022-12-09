@@ -231,6 +231,9 @@ public class CameraFit : MonoBehaviour
         }
     }
 
+    [SerializeField]
+    private bool _showGizmo = false;
+    
     private float _cameraPrevSize;
     private float _cameraPrevFOV;
     private float _cameraPrevPixelWidth;
@@ -342,6 +345,16 @@ public class CameraFit : MonoBehaviour
                 }
             }
         }
+    }
+
+    void OnDrawGizmos()
+    {
+        float verticalHeightSeen = Camera.main.orthographicSize * 2.0f;
+        float verticalWidthSeen = verticalHeightSeen * Camera.main.aspect;
+
+        if (!_showGizmo) return;
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawWireCube(transform.position, new Vector3(verticalWidthSeen, verticalHeightSeen, 0));
     }
 
 

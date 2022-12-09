@@ -7,6 +7,7 @@ public class CameraFitEditor : Editor
     SerializedProperty _heightProp, _widthProp;
     SerializedProperty _VFOVProp, _HFOVProp, _sizeVProp, _sizeHProp;
     SerializedProperty _modeProp, _cameraProp;
+    SerializedProperty _showGizmo;
 
     void OnEnable()
     {
@@ -18,6 +19,7 @@ public class CameraFitEditor : Editor
         _sizeVProp = serializedObject.FindProperty("_verticalSize");
         _sizeHProp = serializedObject.FindProperty("_horizontalSize");
         _cameraProp = serializedObject.FindProperty("_ct");
+        _showGizmo = serializedObject.FindProperty("_showGizmo");
     }
 
     public override void OnInspectorGUI()
@@ -60,7 +62,8 @@ public class CameraFitEditor : Editor
                         break;
                 }                
                 break;
-        }        
+        }
+        EditorGUILayout.PropertyField(_showGizmo, new GUIContent("Show Gizmo"));
         serializedObject.ApplyModifiedProperties();
     }
 
