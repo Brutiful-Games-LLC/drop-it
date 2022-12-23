@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_LIT_silver
+  m_Name: M_LIT_pearl
   m_Shader: {fileID: 4800000, guid: 25e350e1450833d4db9645947035bdde, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -225,7 +225,7 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 0
     m_Colors:
-    - _BaseCol: {r: 0.70033824, g: 0.78719413, b: 0.8113208, a: 1}
+    - _BaseCol: {r: 1, g: 0.985325, b: 0.9009434, a: 1}
     - _Base_Color: {r: 0.042452812, g: 0.8336893, b: 1, a: 0}
     - _Bounce_Light_Color: {r: 0.04765929, g: 0.06603771, b: 0.06603771, a: 0}
     - _Color: {r: 1, g: 0.14622638, b: 0.34515992, a: 0.83137256}
@@ -235,10 +235,10 @@ Material:
     - _EmitCol: {r: 0.03773582, g: 0.021717349, b: 0, a: 1}
     - _Light_Direction: {r: -135, g: 20, b: 0, a: 0}
     - _Main_Light_Color: {r: 0.7490196, g: 0.7490196, b: 0.6666667, a: 0}
-    - _MetalMinMax: {r: 1, g: 1, b: 0, a: 0}
+    - _MetalMinMax: {r: 0.5, g: 0.5, b: 0, a: 0}
     - _SS_Color_1: {r: 0.027100407, g: 0.6337444, b: 0.8207547, a: 0}
     - _SS_Color_2: {r: 0.12904951, g: 0.8820132, b: 0.9433962, a: 0}
-    - _SmoothMinMax: {r: 0.5, g: 0.7, b: 0, a: 0}
+    - _SmoothMinMax: {r: 0.7, g: 0.8, b: 0, a: 0}
     - _Smooth_Min_Max: {r: 0.94, g: 0.98, b: 0, a: 0}
     - _Smoothness_Min_Max: {r: 0.5, g: 0.75, b: 0, a: 0}
     - _Tint_Color_1: {r: 0.13725488, g: 0.5277195, b: 0.6509804, a: 0}
